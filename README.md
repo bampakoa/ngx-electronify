@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/abampakos" target="_blank">
     <img alt="Twitter: abampakos" src="https://img.shields.io/twitter/follow/abampakos.svg?style=social" />
   </a>
@@ -8,14 +8,14 @@
 
 > Angular CLI builder that runs your application in the desktop using Electron
 
-The builder essentially runs your Angular application in `serve` mode and loads the serving URL in an Electron window.
+The builder runs your Angular application in `serve` mode and loads the serving URL in an Electron window.
 
 ### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify)
 
 ## Install
 
 ```sh
-npm install ngx-electronify
+npm install -D ngx-electronify
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ To use the builder, first you need to add a new architect entry in the **angular
 
 ```
 "desktop": {
-  "builder": "ngx-electronify"
+  "builder": "ngx-electronify:electron"
 }
 ```
 `ng run [project-name]:desktop`

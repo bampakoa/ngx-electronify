@@ -1,6 +1,7 @@
 import { BuilderContext, BuilderOutput, createBuilder, Target } from '@angular-devkit/architect';
 import { JsonObject } from '@angular-devkit/core';
 import { spawn } from 'child_process';
+import * as path from 'path';
 
 export default createBuilder((_: JsonObject, context: BuilderContext) => {
   return new Promise<BuilderOutput>(async () => {
@@ -15,6 +16,8 @@ export default createBuilder((_: JsonObject, context: BuilderContext) => {
     const build = await context.scheduleTarget(buildTarget);
     await build.result;
 
-    spawn('..\\ngx-electronify\\node_modules\\.bin\\electron.cmd', ['..\\ngx-electronify\\dist\\renderer.js']);
+    const electronPath = path.join(process.cwd(), 'node_modules', '.bin', 'electron.cmd');
+    const appPath = path.join(process.cwd(), 'node_modules', 'ngx-electronify', 'dist', 'renderer.js');
+    spawn(electronPath, [appPath]);
   })
 });

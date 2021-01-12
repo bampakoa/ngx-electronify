@@ -16,8 +16,8 @@ export default createBuilder((_: JsonObject, context: BuilderContext) => {
     const build = await context.scheduleTarget(buildTarget);
     await build.result;
 
-    const electronPath = path.join(process.cwd(), 'node_modules', '.bin', 'electron.cmd');
-    const appPath = path.join(process.cwd(), 'node_modules', 'ngx-electronify', 'dist', 'renderer.js');
-    spawn(electronPath, [appPath]);
+    const electronPath = path.resolve('node_modules/.bin/electron');
+    const appPath = path.resolve('node_modules/ngx-electronify/dist/renderer.js');
+    spawn(electronPath, [appPath], { shell: true });
   })
 });

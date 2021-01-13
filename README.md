@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1.6-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/abampakos" target="_blank">
     <img alt="Twitter: abampakos" src="https://img.shields.io/twitter/follow/abampakos.svg?style=social" />
   </a>
@@ -15,22 +15,14 @@ The builder runs your Angular application in `serve` mode and loads it in an Ele
 ## Install
 
 ```sh
-npm install -D ngx-electronify
+ng add ngx-electronify
 ```
 
 ## Usage
 
-To use the builder, first you need to add a new architect entry in the **angular.json** file.
-
+```sh
+ng run [project-name]:desktop
 ```
-"desktop": {
-  "builder": "ngx-electronify:electron"
-}
-```
-
-Then, execute the following command to run the builder
-
-`ng run [project-name]:desktop`
 
 ## Author
 

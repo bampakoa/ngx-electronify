@@ -24,6 +24,8 @@ ng add ngx-electronify
 ng run [project-name]:desktop
 ```
 
+![Demo](demo.gif)
+
 ## Author
 
 👤 **Aristeidis Bampakos**

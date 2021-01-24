@@ -18,9 +18,15 @@
     "copy:schema": "copy .\\src\\schema.json dist\\schema.json",
     "copy:collection": "copy .\\schematics\\collection.json dist\\schematics\\collection.json",
     "postbuild": "npm run copy:schema && npm run copy:collection",
-    "release": "standard-version --tag-prefix="
+    "release": "standard-version --tag-prefix=",
+    "pretty": "prettier --write ."
   },
   "devDependencies": {
+    "@commitlint/cli": "9.1.2",
+    "@commitlint/config-conventional": "9.1.2",
+    "husky": "4.2.5",
+    "prettier": "2.1.1",
+    "pretty-quick": "3.0.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine": "^3.6.3",
@@ -34,5 +40,10 @@
     "@angular-devkit/schematics": "11.0.2",
     "electron": "^11.1.1"
   },
-  "schematics": "./dist/schematics/collection.json"
+  "schematics": "./dist/schematics/collection.json",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }

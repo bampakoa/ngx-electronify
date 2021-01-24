@@ -17,13 +17,15 @@
     "build:schematics": "tsc -p tsconfig.schematics.json",
     "copy:schema": "copy .\\src\\schema.json dist\\schema.json",
     "copy:collection": "copy .\\schematics\\collection.json dist\\schematics\\collection.json",
-    "postbuild": "npm run copy:schema && npm run copy:collection"
+    "postbuild": "npm run copy:schema && npm run copy:collection",
+    "release": "standard-version --tag-prefix="
   },
   "devDependencies": {
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine": "^3.6.3",
     "jasmine-node": "^3.0.0",
+    "standard-version": "^9.1.0",
     "ts-node": "~8.3.0",
     "typescript": "~4.0.2"
   },

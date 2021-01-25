@@ -4,7 +4,7 @@ import {
   SchematicsException,
   Tree
 } from '@angular-devkit/schematics';
-import { Schema } from "./schema";
+import { Schema } from './schema';
 import { getWorkspace } from './utility';
 
 interface NgAddOptions extends Schema {
@@ -26,7 +26,7 @@ export const ngAdd = (options: NgAddOptions) => async (
 
   if (project.extensions.projectType !== 'application') {
     throw new SchematicsException(
-      `Electron requires an Angular project type of "application" in angular.json.`
+      `ngx-electronify requires an Angular project type of "application" in angular.json.`
     );
   }
 

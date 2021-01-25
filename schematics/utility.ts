@@ -1,5 +1,5 @@
-import { virtualFs, workspaces } from "@angular-devkit/core";
-import { Tree } from "@angular-devkit/schematics";
+import { virtualFs, workspaces } from '@angular-devkit/core';
+import { Tree } from '@angular-devkit/schematics';
 
 function createHost(tree: Tree): workspaces.WorkspaceHost {
     return {

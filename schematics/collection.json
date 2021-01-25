@@ -3,7 +3,8 @@
     "schematics": {
       "ng-add": {
         "description": "Add ngx-electronify to the project.",
-        "factory": "./index#ngAdd"
+        "factory": "./index#ngAdd",
+        "schema": "./schema.json"
       }
     }
   }

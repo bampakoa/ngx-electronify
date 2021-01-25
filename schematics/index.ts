@@ -1,45 +1,41 @@
+import { workspaces } from '@angular-devkit/core';
 import {
-  chain,
-  Rule,
   SchematicContext,
   SchematicsException,
   Tree
 } from '@angular-devkit/schematics';
-import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
+import { Schema } from './schema';
+import { getWorkspace } from './utility';
 
-export function ngAdd(_options: any): Rule {
-  return (_: Tree, _context: SchematicContext) => {
-    return chain([
-      addTarget(),
-      installPackageJsonDependencies()
-    ]);
-  };
+interface NgAddOptions extends Schema {
+  project: string;
 }
 
-function installPackageJsonDependencies(): Rule {
-  return (host: Tree, context: SchematicContext) => {
-    context.addTask(new NodePackageInstallTask());
-    context.addTask(new NodePackageInstallTask({packageName: 'ngx-electronify'}));
-    return host;
-  };
-}
+export const ngAdd = (options: NgAddOptions) => async (
+  tree: Tree,
+  _context: SchematicContext
+) => {
+  const { host, workspace } = await getWorkspace(tree);
+  const project = workspace.projects.get(options.project);
 
-function addTarget() {
-  return (tree: Tree, _context: SchematicContext) => {
-    const workspace = getWorkspace(tree);
-    const project = workspace.projects[workspace.defaultProject];
-    project.architect['desktop'] = {
-      'builder': 'ngx-electronify:electron'
-    }
-    tree.overwrite('angular.json', JSON.stringify(workspace, null, 2));
-  };
-}
-
-function getWorkspace(host: Tree) {
-  const workspaceConfig = host.read('/angular.json');
-  if (!workspaceConfig) {
-    throw new SchematicsException();
+  if (!project) {
+    throw new SchematicsException(
+      'The specified Angular project is not defined in this workspace.'
+    );
   }
 
-  return JSON.parse(workspaceConfig.toString());
-}
+  if (project.extensions.projectType !== 'application') {
+    throw new SchematicsException(
+      `ngx-electronify requires an Angular project type of "application" in angular.json.`
+    );
+  }
+
+  project.targets.add({
+    name: 'desktop',
+    builder: 'ngx-electronify:electron',
+    options: {},
+  });
+
+  await workspaces.writeWorkspace(workspace, host);
+  return tree;
+};

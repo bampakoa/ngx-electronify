@@ -19,8 +19,8 @@
     "build": "tsc && npm run build:schematics",
     "build:schematics": "tsc -p tsconfig.schematics.json",
     "copy:schema": "copy .\\src\\schema.json dist\\schema.json",
-    "copy:collection": "copy .\\schematics\\collection.json dist\\schematics\\collection.json",
-    "postbuild": "npm run copy:schema && npm run copy:collection",
+    "copy:schematics": "copy .\\schematics\\*.json dist\\schematics\\*.json",
+    "postbuild": "npm run copy:schema && npm run copy:schematics",
     "release": "standard-version --tag-prefix=",
     "pretty": "prettier --write ."
   },

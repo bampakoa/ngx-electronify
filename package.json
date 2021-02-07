@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronify",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "Angular CLI builder that runs your application in the desktop using Electron",
   "keywords": [
     "angular",

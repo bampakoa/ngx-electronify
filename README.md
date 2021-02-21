@@ -1,4 +1,6 @@
-![Logo](https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true" alt="Ngx-electronify" />
+</p>
 
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 <p>
@@ -28,7 +30,7 @@ You can pass the following options:
 ng run [project-name]:desktop
 ```
 
-![Demo](https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true)
+ <img src="https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true" alt="Demo" />
 
 ## Author
 

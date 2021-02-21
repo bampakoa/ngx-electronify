@@ -1,3 +1,5 @@
+![Logo](https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true)
+
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.6-blue.svg?cacheSeconds=2592000" />

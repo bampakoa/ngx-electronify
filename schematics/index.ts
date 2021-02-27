@@ -33,7 +33,7 @@ export const ngAdd = (options: NgAddOptions) => async (
   project.targets.add({
     name: 'desktop',
     builder: 'ngx-electronify:electron',
-    options: {},
+    options: {}
   });
 
   await workspaces.writeWorkspace(workspace, host);

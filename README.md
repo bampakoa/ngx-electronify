@@ -17,8 +17,10 @@ The builder runs your Angular application in `serve` mode and loads it in an Ele
 ```sh
 ng add ngx-electronify
 ```
+
 You can pass the following options:
-* `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
+
+- `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
 
 ## Usage
 
@@ -32,13 +34,13 @@ ng run [project-name]:desktop
 
 👤 **Aristeidis Bampakos**
 
-* Website: http://www.medium.com/@abampakos
-* Twitter: [@abampakos](https://twitter.com/abampakos)
-* Github: [@bampakoa](https://github.com/bampakoa)
+- Website: http://www.medium.com/@abampakos
+- Twitter: [@abampakos](https://twitter.com/abampakos)
+- Github: [@bampakoa](https://github.com/bampakoa)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/bampakoa/ngx-electronify/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/bampakoa/ngx-electronify/issues).
 
 ## Show your support
 

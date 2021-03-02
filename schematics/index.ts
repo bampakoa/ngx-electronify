@@ -2,7 +2,7 @@ import { workspaces } from '@angular-devkit/core';
 import {
   SchematicContext,
   SchematicsException,
-  Tree
+  Tree,
 } from '@angular-devkit/schematics';
 import { Schema } from './schema';
 import { getWorkspace } from './utility';
@@ -13,20 +13,20 @@ interface NgAddOptions extends Schema {
 
 export const ngAdd = (options: NgAddOptions) => async (
   tree: Tree,
-  _context: SchematicContext
+  _context: SchematicContext,
 ) => {
   const { host, workspace } = await getWorkspace(tree);
   const project = workspace.projects.get(options.project);
 
   if (!project) {
     throw new SchematicsException(
-      'The specified Angular project is not defined in this workspace.'
+      'The specified Angular project is not defined in this workspace.',
     );
   }
 
   if (project.extensions.projectType !== 'application') {
     throw new SchematicsException(
-      `ngx-electronify requires an Angular project type of "application" in angular.json.`
+      `ngx-electronify requires an Angular project type of "application" in angular.json.`,
     );
   }
 

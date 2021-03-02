@@ -2,7 +2,7 @@ import {
   BuilderContext,
   BuilderOutput,
   createBuilder,
-  Target,
+  Target
 } from '@angular-devkit/architect';
 import { JsonObject } from '@angular-devkit/core';
 import { spawn } from 'child_process';
@@ -20,7 +20,7 @@ export default createBuilder(
       const buildTarget: Target = {
         target: 'serve',
         project: (context.target as Target).project,
-        configuration: options.configuration ? options.configuration : '',
+        configuration: options.configuration ? options.configuration : ''
       };
 
       // start building the app
@@ -29,10 +29,10 @@ export default createBuilder(
 
       const electronPath = path.resolve('node_modules/.bin/electron');
       const appPath = path.resolve(
-        'node_modules/ngx-electronify/dist/renderer.js',
+        'node_modules/ngx-electronify/dist/renderer.js'
       );
 
       spawn(electronPath, [appPath], { shell: true });
     });
-  },
+  }
 );

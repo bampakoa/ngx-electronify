@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true" alt="Ngx-electronify" />
+</p>
+
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.6-blue.svg?cacheSeconds=2592000" />
@@ -28,7 +32,7 @@ You can pass the following options:
 ng run [project-name]:desktop
 ```
 
-![Demo](https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true)
+ <img src="https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true" alt="Demo" />
 
 ## Author
 

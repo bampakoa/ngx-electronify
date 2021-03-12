@@ -3,12 +3,6 @@
 </p>
 
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.1.6-blue.svg?cacheSeconds=2592000" />
-  <a href="https://twitter.com/abampakos" target="_blank">
-    <img alt="Twitter: abampakos" src="https://img.shields.io/twitter/follow/abampakos.svg?style=social" />
-  </a>
-</p>
 
 > Angular CLI builder that runs your application in the desktop using Electron
 
@@ -23,6 +17,7 @@ ng add ngx-electronify
 ```
 You can pass the following options:
 * `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
+* `--configuration`: the configuration of the workspace. By default it uses the development configuration.
 
 ## Usage
 

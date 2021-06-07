@@ -6,7 +6,8 @@ function createWindow() {
     height: 600
   });
 
-  mainWindow.loadURL('http://localhost:4200');
+  const params = process.argv.slice(2);
+  mainWindow.loadURL('http://localhost:' + params[0]);
 }
 
 app.whenReady().then(() => {

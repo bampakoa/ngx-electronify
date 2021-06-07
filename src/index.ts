@@ -24,14 +24,15 @@ export default createBuilder(
 
       // start building the app
       const build = await context.scheduleTarget(buildTarget);
-      await build.result;
+      const result = await build.result;
 
       const electronPath = path.resolve('node_modules/.bin/electron');
       const appPath = path.resolve(
         'node_modules/ngx-electronify/dist/renderer.js'
       );
 
-      spawn(electronPath, [appPath], { shell: true });
+      const port = result.port as string;
+      spawn(electronPath, [appPath, port], { shell: true });
     });
   }
 );

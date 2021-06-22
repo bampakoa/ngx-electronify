@@ -1,4 +1,6 @@
 import { app, BrowserWindow } from 'electron';
+import installExtension from 'electron-devtools-installer';
+const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -11,5 +13,9 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  installExtension(ANGULAR_DEVTOOLS)
+    .then((name) => console.log(`Added Extension:  ${name}`))
+    .catch((err) => console.log('An error occurred: ', err));
+}).then(() => {
   createWindow();
 });

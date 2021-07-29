@@ -13,3 +13,10 @@ function createWindow() {
 app.whenReady().then(() => {
   createWindow();
 });
+
+app.on('web-contents-created', (_, contents) => {
+  // Angular router is ignored on `will-navigate` event
+  contents.on('will-navigate', event => {
+    event.preventDefault();
+  });
+});

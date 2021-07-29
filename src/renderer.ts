@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, shell } from 'electron';
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -18,5 +18,15 @@ app.on('web-contents-created', (_, contents) => {
   // Angular router is ignored on `will-navigate` event
   contents.on('will-navigate', event => {
     event.preventDefault();
+  });
+});
+
+app.on('web-contents-created', (_, contents) => {
+  contents.setWindowOpenHandler(({ url }) => {
+    // open all blank href links using the OS default browser
+    setImmediate(() => {
+      shell.openExternal(url);
+    });
+    return { action: 'deny' };
   });
 });

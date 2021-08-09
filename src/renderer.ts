@@ -19,9 +19,7 @@ app.on('web-contents-created', (_, contents) => {
   contents.on('will-navigate', event => {
     event.preventDefault();
   });
-});
 
-app.on('web-contents-created', (_, contents) => {
   contents.setWindowOpenHandler(({ url }) => {
     // open all blank href links using the OS default browser
     setImmediate(() => {

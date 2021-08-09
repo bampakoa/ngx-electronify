@@ -16,6 +16,7 @@
     "save": "devDependencies"
   },
   "scripts": {
+    "serve": "tsc -w",
     "build": "tsc && npm run build:schematics",
     "build:schematics": "tsc -p tsconfig.schematics.json",
     "copy:schema": "copy .\\src\\schema.json dist\\schema.json",

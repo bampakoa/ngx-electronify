@@ -8,7 +8,7 @@
 
 > Angular CLI builder that runs your application in the desktop using Electron
 
-The builder runs your Angular application in `serve` mode and loads it in an Electron window. Notice that the builder currently assumes that you are serving your application on the default port 4200.
+The builder runs your Angular application in `serve` mode and loads it in an Electron window.
 
 ### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify)
 

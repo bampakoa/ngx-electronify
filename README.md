@@ -2,11 +2,13 @@
   <img src="https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true" alt="Ngx-electronify" />
 </p>
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/bampakoa/ngx-electronify)
+
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 
 > Angular CLI builder that runs your application in the desktop using Electron
 
-The builder runs your Angular application in `serve` mode and loads it in an Electron window. Notice that the builder currently assumes that you are serving your application on the default port 4200.
+The builder runs your Angular application in `serve` mode and loads it in an Electron window.
 
 ### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify)
 

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/bampakoa/ngx-electronify/compare/1.3.0...1.4.0) (2021-08-09)
+
+
+### Features
+
+* match Angular CLI port number ([bd5fc01](https://github.com/bampakoa/ngx-electronify/commit/bd5fc01db75b998e35fe5419eb7e77be31bdebbb)), closes [#8](https://github.com/bampakoa/ngx-electronify/issues/8)
+* open href links using system browser ([36294d5](https://github.com/bampakoa/ngx-electronify/commit/36294d5f9c7af2638fd87f933db266478592e208))
+* prevent external link navigation in-app ([79b7f01](https://github.com/bampakoa/ngx-electronify/commit/79b7f0140053746993525a8df8cf67446968bdcd))
+
+
+### Bug Fixes
+
+* use `$id` for schema configuration file ([f2ee897](https://github.com/bampakoa/ngx-electronify/commit/f2ee8975e3b57f9808efdd77c0a1ef82e76fcca2))
+
 ## [1.3.0](https://github.com/bampakoa/ngx-electronify/compare/1.2.0...1.3.0) (2021-03-24)
 
 

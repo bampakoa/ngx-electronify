@@ -23,12 +23,13 @@
     "copy:schematics": "copy .\\schematics\\*.json dist\\schematics\\*.json",
     "postbuild": "npm run copy:schema && npm run copy:schematics",
     "release": "standard-version --tag-prefix=",
-    "pretty": "prettier --write ."
+    "pretty": "prettier --write .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.2",
-    "husky": "4.2.5",
+    "husky": "7.0.1",
     "prettier": "2.1.1",
     "pretty-quick": "3.0.2",
     "@types/jasmine": "~3.6.0",
@@ -45,10 +46,5 @@
     "@angular-devkit/schematics": "12.2.1",
     "electron": "^13.2.0"
   },
-  "schematics": "./dist/schematics/collection.json",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
+  "schematics": "./dist/schematics/collection.json"
 }

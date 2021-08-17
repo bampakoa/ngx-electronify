@@ -30,7 +30,7 @@
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "husky": "7.0.1",
-    "prettier": "2.1.1",
+    "prettier": "2.3.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine": "^3.6.3",

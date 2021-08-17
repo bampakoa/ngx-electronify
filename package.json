@@ -31,7 +31,6 @@
     "@commitlint/config-conventional": "9.1.2",
     "husky": "7.0.1",
     "prettier": "2.1.1",
-    "pretty-quick": "3.0.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine": "^3.6.3",

@@ -28,7 +28,7 @@ export default createBuilder(
 
       const electronPath = path.resolve('node_modules/.bin/electron');
       const appPath = path.resolve(
-        'node_modules/ngx-electronify/dist/renderer.js'
+        'node_modules/ngx-electronify/dist/shell.js'
       );
 
       const port = result.port as string;

@@ -10,7 +10,7 @@
       "windows": {
         "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
       },
-      "args": ["dist/renderer.js", "4200"],
+      "args": ["dist/shell.js", "4200"],
       "outputCapture": "std"
     }
   ]

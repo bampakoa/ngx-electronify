@@ -1,5 +1,8 @@
 import { app, BrowserWindow, shell } from 'electron';
 
+const params = process.argv.slice(2);
+const appUrl = `http://localhost:${params[0]}/`;
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -7,8 +10,7 @@ function createWindow() {
     show: false
   });
 
-  const params = process.argv.slice(2);
-  mainWindow.loadURL('http://localhost:' + params[0]);
+  mainWindow.loadURL(appUrl);
 
   mainWindow.once('ready-to-show', () => mainWindow.show());
 }
@@ -19,8 +21,11 @@ app.whenReady().then(() => {
 
 app.on('web-contents-created', (_, contents) => {
   // Angular router is ignored on `will-navigate` event
-  contents.on('will-navigate', event => {
-    event.preventDefault();
+  contents.on('will-navigate', (event, url) => {
+    // allow hot reload to work properly
+    if (url !== appUrl) {
+      event.preventDefault();
+    }
   });
 
   contents.setWindowOpenHandler(({ url }) => {

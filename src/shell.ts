@@ -1,4 +1,6 @@
 import { app, BrowserWindow, shell } from 'electron';
+import installExtension from 'electron-devtools-installer';
+const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
 
 const params = process.argv.slice(2);
 const appUrl = `http://localhost:${params[0]}/`;
@@ -15,7 +17,16 @@ function createWindow() {
   mainWindow.once('ready-to-show', () => mainWindow.show());
 }
 
-app.whenReady().then(() => {
+async function installAngularDevtools() {
+  const name = await installExtension(ANGULAR_DEVTOOLS);
+  if (!!name) {
+    console.log('An error occurred when downloading the extension: ', name);
+  }
+  console.log(`Added Extension:  ${name}`);
+}
+
+app.whenReady().then(async () => {
+  await installAngularDevtools();
   createWindow();
 });
 

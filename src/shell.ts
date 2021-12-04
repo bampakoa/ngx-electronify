@@ -18,11 +18,12 @@ function createWindow() {
 }
 
 async function installAngularDevtools() {
-  const name = await installExtension(ANGULAR_DEVTOOLS);
-  if (!!name) {
-    console.log('An error occurred when downloading the extension: ', name);
+  try {
+    const name = await installExtension(ANGULAR_DEVTOOLS);
+    console.log(`Added Extension:  ${name}`);
+  } catch (err) {
+    console.log('An error occurred when downloading the extension: ', err);
   }
-  console.log(`Added Extension:  ${name}`);
 }
 
 app.whenReady().then(async () => {

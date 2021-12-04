@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/bampakoa/ngx-electronify/compare/1.4.0...1.5.0) (2021-12-04)
+
+
+### Features
+
+* add angular devtools ([9baaf10](https://github.com/bampakoa/ngx-electronify/commit/9baaf10594cfc6a0931e0a5321211332b268d6d8)), closes [#12](https://github.com/bampakoa/ngx-electronify/issues/12)
+* show Electron window when app is loaded ([eb41496](https://github.com/bampakoa/ngx-electronify/commit/eb41496fe66b0bbd4d27159157a9e447c1f9d49a))
+
+
+### Bug Fixes
+
+* allow hot-reload on navigate ([538ec0f](https://github.com/bampakoa/ngx-electronify/commit/538ec0fb9e086b8d07527e6e1b356dc73ffd25ac))
+* use try catch for DevTools error handling ([40d0f17](https://github.com/bampakoa/ngx-electronify/commit/40d0f17c7c680576e803ec1326437f7d89b7a9c7))
+
 ## [1.4.0](https://github.com/bampakoa/ngx-electronify/compare/1.3.0...1.4.0) (2021-08-09)
 
 

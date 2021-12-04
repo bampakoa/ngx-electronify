@@ -29,6 +29,10 @@ ng run [project-name]:desktop
 
  <img src="https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true" alt="Demo" />
 
+## 🧩 Angular DevTools
+
+You can run the official Angular DevTools extension to debug and profile your Angular application directly from the Electron window. Select the `View | Toggle Developer Tools` item from the main menu of your application and click on the **Angular** tab to get started 🚀.
+
 ## Author
 
 👤 **Aristeidis Bampakos**

@@ -12,6 +12,7 @@ function createWindow() {
     show: false
   });
 
+  // load the URL of the Angular Live Development Server 
   mainWindow.loadURL(appUrl);
 
   mainWindow.once('ready-to-show', () => mainWindow.show());

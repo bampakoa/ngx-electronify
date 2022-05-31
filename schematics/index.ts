@@ -28,6 +28,7 @@ export const ngAdd =
       );
     }
 
+    // add a new architect entry in the angular.json file of the current project
     project.targets.add({
       name: 'desktop',
       builder: 'ngx-electronify:electron',

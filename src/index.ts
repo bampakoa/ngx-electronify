@@ -26,11 +26,14 @@ export default createBuilder(
       const build = await context.scheduleTarget(buildTarget);
       const result = await build.result;
 
+      // find the path of the Electron binary and run it passing the shell.js as a parameter
       const electronPath = path.resolve('node_modules/.bin/electron');
       const appPath = path.resolve(
         'node_modules/ngx-electronify/dist/shell.js'
       );
 
+      // the port of the Angular Live Development Server is passed to the Electron window
+      // so that it knows exactly which URL should load
       const port = result.port as string;
       spawn(electronPath, [appPath, port], { shell: true });
     });

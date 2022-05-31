@@ -2,8 +2,8 @@ import { app, BrowserWindow, shell } from 'electron';
 import installExtension from 'electron-devtools-installer';
 const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
 
-const params = process.argv.slice(2);
-const appUrl = `http://localhost:${params[0]}/`;
+const [port, devTools] = process.argv.slice(2);
+const appUrl = `http://localhost:${port}/`;
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -12,10 +12,15 @@ function createWindow() {
     show: false
   });
 
-  // load the URL of the Angular Live Development Server 
+  // load the URL of the Angular Live Development Server
   mainWindow.loadURL(appUrl);
 
-  mainWindow.once('ready-to-show', () => mainWindow.show());
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show();
+    if (devTools) {
+      mainWindow.webContents.openDevTools();
+    }
+  });
 }
 
 async function installAngularDevtools() {

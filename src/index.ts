@@ -9,6 +9,7 @@ import { spawn } from 'child_process';
 import * as path from 'path';
 interface Options {
   configuration?: string;
+  devTools: boolean;
 }
 type BuilderOptions = Options & JsonObject;
 
@@ -35,7 +36,16 @@ export default createBuilder(
       // the port of the Angular Live Development Server is passed to the Electron window
       // so that it knows exactly which URL should load
       const port = result.port as string;
-      spawn(electronPath, [appPath, port], { shell: true });
+      // the devTools parameter is passed to the Electron window so that it knows whether
+      // to open the dev tools or not
+      // this check is necessary as we explicitly want to have a boolean value.
+      // if the user passes a string, we assume/ convert that it is a boolean value
+      const devTools =
+        options.devTools != null && `${options.devTools}` !== 'false';
+
+      spawn(electronPath, [appPath, port, devTools.toString()], {
+        shell: true
+      });
     });
   }
 );

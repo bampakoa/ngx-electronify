@@ -5,6 +5,11 @@
     "configuration": {
       "description": "The configuration option we use when running the app.",
       "type": "string"
+    },
+    "devTools": {
+      "description": "Open Chromium devtools",
+      "type": "boolean",
+      "default": false
     }
   }
 }

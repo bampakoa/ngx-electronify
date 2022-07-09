@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/bampakoa/ngx-electronify/compare/1.5.0...1.6.0) (2022-07-09)
+
+
+### Features
+
+* add option to open Chrome DevTools at startup ([01d5c7e](https://github.com/bampakoa/ngx-electronify/commit/01d5c7e3148834895c1f0350b6eac94c658f4cff)), closes [#14](https://github.com/bampakoa/ngx-electronify/issues/14)
+
 ## [1.5.0](https://github.com/bampakoa/ngx-electronify/compare/1.4.0...1.5.0) (2021-12-04)
 
 

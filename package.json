@@ -43,7 +43,7 @@
     "@angular-devkit/architect": "0.1400.5",
     "@angular-devkit/core": "^14.0.5",
     "@angular-devkit/schematics": "14.0.5",
-    "electron": "^16.0.4",
+    "electron": "^19.0.8",
     "electron-devtools-installer": "^3.2.0"
   },
   "schematics": "./dist/schematics/collection.json"

@@ -10,6 +10,11 @@
       "description": "Open Chromium devtools",
       "type": "boolean",
       "default": false
+    },
+    "allowIntegration": {
+      "description": "Gives access of the Electron API to the app.",
+      "type": "boolean",
+      "default": false
     }
   }
 }

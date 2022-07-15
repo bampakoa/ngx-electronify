@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "electron": {
+      "projectType": "library",
+      "root": "projects/electron",
+      "sourceRoot": "projects/electron/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/electron/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/electron/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/electron/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/electron/src/test.ts",
+            "tsConfig": "projects/electron/tsconfig.spec.json",
+            "karmaConfig": "projects/electron/karma.conf.js"
+          }
+        }
+      }
+    }
+  }
+}

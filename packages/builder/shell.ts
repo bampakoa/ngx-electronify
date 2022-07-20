@@ -17,7 +17,7 @@ function createWindow() {
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
-    if (devTools) {
+    if (devTools === 'true') {
       mainWindow.webContents.openDevTools();
     }
   });

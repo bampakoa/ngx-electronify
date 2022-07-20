@@ -16,9 +16,6 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "types": ["node", "jasmine"],
-    "outDir": "dist"
-  },
-  "include": [
-    "src/**/*"
-  ]
+    "outDir": "../../dist"
+  }
 }

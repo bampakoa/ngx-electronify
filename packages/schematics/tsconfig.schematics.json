@@ -14,8 +14,7 @@
       "noImplicitThis": true,
       "noUnusedParameters": true,
       "noUnusedLocals": true,
-      "rootDir": "schematics",
-      "outDir": "./dist/schematics",
+      "outDir": "../../dist/schematics",
       "skipDefaultLibCheck": true,
       "skipLibCheck": true,
       "sourceMap": true,
@@ -25,11 +24,5 @@
         "jasmine",
         "node"
       ]
-    },
-    "include": [
-      "schematics/**/*"
-    ],
-    "exclude": [
-      "schematics/*/files/**/*"
-    ]
+    }
   }

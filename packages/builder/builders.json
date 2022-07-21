@@ -1,8 +1,8 @@
 {
   "builders": {
     "electron": {
-      "implementation": "./dist",
-      "schema": "./dist/schema.json",
+      "implementation": "./index.js",
+      "schema": "./schema.json",
       "description": "Renders Angular application in Electron."
     }
   }

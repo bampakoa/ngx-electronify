@@ -29,9 +29,7 @@ export default createBuilder(
 
       // find the path of the Electron binary and run it passing the shell.js as a parameter
       const electronPath = path.resolve('node_modules/.bin/electron');
-      const appPath = path.resolve(
-        'node_modules/ngx-electronify/dist/shell.js'
-      );
+      const appPath = path.resolve('node_modules/ngx-electronify/shell.js');
 
       // the port of the Angular Live Development Server is passed to the Electron window
       // so that it knows exactly which URL should load

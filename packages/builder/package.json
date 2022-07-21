@@ -1,0 +1,24 @@
+{
+  "name": "ngx-electronify",
+  "version": "1.6.0",
+  "description": "Angular CLI builder that runs your application in the desktop using Electron",
+  "keywords": [
+    "angular",
+    "electron"
+  ],
+  "bugs": {
+    "url": "https://github.com/bampakoa/ngx-electronify/issues"
+  },
+  "homepage": "https://github.com/bampakoa/ngx-electronify#readme",
+  "main": "index.js",
+  "builders": "builders.json",
+  "ng-add": {
+    "save": "devDependencies"
+  },
+  "dependencies": {
+    "electron": "^19.0.8",
+    "electron-devtools-installer": "^3.2.0",
+    "ngx-electronyzer": "1.0.0"
+  },
+  "schematics": "./schematics/collection.json"
+}

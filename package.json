@@ -1,28 +1,14 @@
 {
   "name": "ngx-electronify",
   "version": "1.6.0",
-  "description": "Angular CLI builder that runs your application in the desktop using Electron",
-  "keywords": [
-    "angular",
-    "electron"
-  ],
-  "bugs": {
-    "url": "https://github.com/bampakoa/ngx-electronify/issues"
-  },
-  "homepage": "https://github.com/bampakoa/ngx-electronify#readme",
-  "main": "dist/index.js",
-  "builders": "builders.json",
-  "ng-add": {
-    "save": "devDependencies"
-  },
   "scripts": {
     "serve": "tsc -w -p packages\\builder\\tsconfig.json",
     "build": "tsc -p packages\\builder\\tsconfig.json && npm run build:schematics",
     "build:schematics": "tsc -p packages\\schematics\\tsconfig.schematics.json",
-    "copy:schema": "copy packages\\builder\\schema.json dist\\schema.json",
-    "copy:schematics:collection": "copy packages\\schematics\\collection.json dist\\schematics\\collection.json",
-    "copy:schematics:schema": "copy packages\\schematics\\schema.json dist\\schematics\\schema.json",
-    "postbuild": "npm run copy:schema && npm run copy:schematics:collection && npm run copy:schematics:schema",
+    "copy": "copy packages\\builder\\*.json dist\\*.json && copy README.md dist\\README.md",
+    "copy:schematics": "copy packages\\schematics\\*.json dist\\schematics\\*.json",
+    "postbuild": "npm run copy && npm run copy:schematics && npm run clean:dist",
+    "clean:dist": "del dist\\tsconfig.json dist\\schematics\\tsconfig.schematics.json",
     "release": "standard-version --tag-prefix=",
     "pretty": "prettier --write .",
     "prepare": "husky install"
@@ -47,6 +33,5 @@
     "electron": "^19.0.8",
     "electron-devtools-installer": "^3.2.0",
     "ngx-electronyzer": "1.0.0"
-  },
-  "schematics": "./dist/schematics/collection.json"
+  }
 }

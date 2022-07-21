@@ -10,6 +10,7 @@
     "postbuild": "npm run copy && npm run copy:schematics && npm run clean:dist",
     "clean:dist": "del dist\\tsconfig.json dist\\schematics\\tsconfig.schematics.json",
     "release": "standard-version --tag-prefix=",
+    "release:major": "standard-version --tag-prefix= --release-as major",
     "pretty": "prettier --write .",
     "prepare": "husky install"
   },

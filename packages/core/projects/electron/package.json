@@ -1,0 +1,12 @@
+{
+  "name": "ngx-electronyzer",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "electron": "^19.0.8"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

@@ -20,7 +20,8 @@ ng add ngx-electronify
 You can pass the following options:
 * `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
 * `--configuration`: the configuration of the workspace. By default it uses the development configuration.
-* `--devTools`: settings this to true it will automatically open the developer tools. By default this is set to false.
+* `--devTools`: setting this to true it will automatically open the developer tools. By default this is set to false.
+* `--allowIntegration`: setting this to true will enable Electron integration through the `ngx-electronyzer` library. By default this is set to false.
 
 ## Usage
 

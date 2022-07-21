@@ -2,22 +2,32 @@ import { app, BrowserWindow, shell } from 'electron';
 import installExtension from 'electron-devtools-installer';
 const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
 
-const [port, devTools] = process.argv.slice(2);
+const [port, devTools, allowIntegration] = process.argv.slice(2);
 const appUrl = `http://localhost:${port}/`;
 
 function createWindow() {
-  const mainWindow = new BrowserWindow({
+  const options: Electron.BrowserWindowConstructorOptions = {
     width: 800,
     height: 600,
     show: false
-  });
+  };
+
+  // expose the Electron API into the global window object
+  if (getBoolean(allowIntegration)) {
+    options.webPreferences = {
+      contextIsolation: false,
+      nodeIntegration: true
+    }
+  }
+  
+  const mainWindow = new BrowserWindow(options);
 
   // load the URL of the Angular Live Development Server
   mainWindow.loadURL(appUrl);
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
-    if (devTools === 'true') {
+    if (getBoolean(devTools)) {
       mainWindow.webContents.openDevTools();
     }
   });
@@ -54,3 +64,7 @@ app.on('web-contents-created', (_, contents) => {
     return { action: 'deny' };
   });
 });
+
+function getBoolean(value: string) {
+  return value === 'true' ? true : false;
+}

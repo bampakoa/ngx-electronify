@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/bampakoa/ngx-electronify/compare/1.6.0...2.0.0) (2022-07-21)
+
+
+### Features
+
+* add integration with Electron API ([3403724](https://github.com/bampakoa/ngx-electronify/commit/34037248f619cd0aece2bd664c688343f2d427c1))
+
+
+### Bug Fixes
+
+* open Dev Tools only when requested ([a1a79eb](https://github.com/bampakoa/ngx-electronify/commit/a1a79ebfde50d303b649d70b0cec02d11feb3b61))
+
 ## [1.6.0](https://github.com/bampakoa/ngx-electronify/compare/1.5.0...1.6.0) (2022-07-09)
 
 

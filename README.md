@@ -21,7 +21,7 @@ You can pass the following options:
 * `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
 * `--configuration`: the configuration of the workspace. By default it uses the development configuration.
 * `--devTools`: setting this to true it will automatically open the developer tools. By default this is set to false.
-* `--allowIntegration`: setting this to true will enable Electron integration through the [ngx-electronyzer](https://github.com/bampakoa/ngx-electronify/blob/master/packages/core/projects/electron) library. By default this is set to false.
+* `--allowIntegration`: setting this to true will enable Electron integration through the [ngx-electronyzer](https://www.npmjs.com/package/ngx-electronyzer) library. By default this is set to false.
 
 ## Usage
 

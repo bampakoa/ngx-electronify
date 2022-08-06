@@ -1,6 +1,14 @@
 {
   "name": "ngx-electronyzer",
   "version": "1.0.0",
+  "keywords": [
+    "angular",
+    "electron"
+  ],
+  "bugs": {
+    "url": "https://github.com/bampakoa/ngx-electronify/issues"
+  },
+  "homepage": "https://github.com/bampakoa/ngx-electronify/tree/master/packages/core/projects/electron#readme",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",

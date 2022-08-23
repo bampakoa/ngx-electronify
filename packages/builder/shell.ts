@@ -17,9 +17,9 @@ function createWindow() {
     options.webPreferences = {
       contextIsolation: false,
       nodeIntegration: true
-    }
+    };
   }
-  
+
   const mainWindow = new BrowserWindow(options);
 
   // load the URL of the Angular Live Development Server

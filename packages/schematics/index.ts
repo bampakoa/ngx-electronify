@@ -1,11 +1,10 @@
-import { workspaces } from '@angular-devkit/core';
 import {
   SchematicContext,
   SchematicsException,
   Tree
 } from '@angular-devkit/schematics';
+import { readWorkspace, writeWorkspace } from '@schematics/angular/utility';
 import { Schema } from './schema';
-import { getWorkspace } from './utility';
 
 interface NgAddOptions extends Schema {
   project: string;
@@ -13,7 +12,7 @@ interface NgAddOptions extends Schema {
 
 export const ngAdd =
   (options: NgAddOptions) => async (tree: Tree, _context: SchematicContext) => {
-    const { host, workspace } = await getWorkspace(tree);
+    const workspace = await readWorkspace(tree);
     const project = workspace.projects.get(options.project);
 
     if (!project) {
@@ -35,6 +34,6 @@ export const ngAdd =
       options: {}
     });
 
-    await workspaces.writeWorkspace(workspace, host);
+    await writeWorkspace(tree, workspace);
     return tree;
   };

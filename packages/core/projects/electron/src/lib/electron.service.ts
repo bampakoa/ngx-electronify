@@ -5,13 +5,12 @@ import { ElectronAPI } from './renderer';
   providedIn: 'root'
 })
 export class ElectronService {
-
   private _electron: ElectronAPI = window.require?.('electron');
 
   get isElectronApp(): boolean {
     return !!this._electron;
   }
-  
+
   get isMacOS(): boolean {
     return this._electron?.platform === 'darwin';
   }
@@ -63,5 +62,4 @@ export class ElectronService {
   get shell(): Electron.Shell {
     return this._electron?.shell;
   }
-
 }

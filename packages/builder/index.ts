@@ -34,15 +34,22 @@ export default createBuilder(
       // the port of the Angular Live Development Server is passed to the Electron window
       // so that it knows exactly which URL should load
       const port = result.port as string;
-      
+
       // the following parameters are checked in that way because we explicitly want to have a boolean value.
       // If the user passes a string, we assume that it is a boolean value
-      const devTools = options.devTools != null && `${options.devTools}` !== 'false';
-      const allowIntegration = options.allowIntegration != null && `${options.allowIntegration}` !== 'false';
+      const devTools =
+        options.devTools != null && `${options.devTools}` !== 'false';
+      const allowIntegration =
+        options.allowIntegration != null &&
+        `${options.allowIntegration}` !== 'false';
 
-      spawn(electronPath, [appPath, port, devTools.toString(), allowIntegration.toString()], {
-        shell: true
-      });
+      spawn(
+        electronPath,
+        [appPath, port, devTools.toString(), allowIntegration.toString()],
+        {
+          shell: true
+        }
+      );
     });
   }
 );

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/bampakoa/ngx-electronify/compare/2.0.0...2.0.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* specify which workspace configuration to use ([3d795b1](https://github.com/bampakoa/ngx-electronify/commit/3d795b1b799d0ec79a9f0f7b3a8f527304982fda))
+
 ## [2.0.0](https://github.com/bampakoa/ngx-electronify/compare/1.6.0...2.0.0) (2022-07-21)
 
 

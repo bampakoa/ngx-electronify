@@ -15,8 +15,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.0.3",
-    "@commitlint/config-conventional": "17.0.3",
+    "@commitlint/cli": "17.1.2",
+    "@commitlint/config-conventional": "17.1.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "husky": "8.0.1",
@@ -28,10 +28,10 @@
     "typescript": "~4.5.2"
   },
   "dependencies": {
-    "@angular-devkit/architect": "0.1401.3",
-    "@angular-devkit/core": "^14.1.3",
-    "@angular-devkit/schematics": "14.1.3",
-    "@schematics/angular": "14.1.3",
+    "@angular-devkit/architect": "0.1402.1",
+    "@angular-devkit/core": "^14.2.1",
+    "@angular-devkit/schematics": "14.2.1",
+    "@schematics/angular": "14.2.1",
     "electron": "^19.0.8",
     "electron-devtools-installer": "^3.2.0",
     "ngx-electronyzer": "1.0.0"

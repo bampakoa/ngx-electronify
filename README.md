@@ -19,15 +19,19 @@ ng add ngx-electronify
 ```
 You can pass the following options:
 * `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
-* `--configuration`: the configuration of the workspace. By default it uses the development configuration.
-* `--devTools`: setting this to true it will automatically open the developer tools. By default this is set to false.
-* `--allowIntegration`: setting this to true will enable Electron integration through the [ngx-electronyzer](https://www.npmjs.com/package/ngx-electronyzer) library. By default this is set to false.
 
 ## Usage
 
 ```sh
 ng run [project-name]:desktop
 ```
+You can pass the following options either in the `angular.json` file or when running the builder from the terminal:
+
+> Remember that options need to be typed in kebab-case format from the terminal!
+
+* `workspaceConfig`: the configuration of the workspace. By default it uses the workspace default configuration.
+* `devTools`: setting this to true will automatically open the Chrome developer tools. By default this is set to `false`.
+* `allowIntegration`: setting this to true will enable Electron integration through the [ngx-electronyzer](https://www.npmjs.com/package/ngx-electronyzer) library. By default this is set to `false`.
 
  <img src="https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true" alt="Demo" />
 

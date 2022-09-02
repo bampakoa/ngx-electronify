@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema",
   "type": "object",
   "properties": {
-    "configuration": {
+    "workspaceConfig": {
       "description": "The configuration option we use when running the app.",
       "type": "string"
     },

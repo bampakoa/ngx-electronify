@@ -2,7 +2,7 @@
 
 > Angular library that provides integration of the Electron API into an Angular application
 
-The library was built as a replacement of [ngx-electron](https://github.com/ThorstenHans/ngx-electron), which is not currenty under development. 
+The library was built as a replacement of [ngx-electron](https://github.com/ThorstenHans/ngx-electron), which is not currently under development. 
 
 ### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify/packages/core/projects/electron)
 

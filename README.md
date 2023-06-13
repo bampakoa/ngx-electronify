@@ -2,8 +2,6 @@
   <img src="https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true" alt="Ngx-electronify" />
 </p>
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/bampakoa/ngx-electronify)
-
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 
 > Angular CLI builder that runs your application in the desktop using Electron

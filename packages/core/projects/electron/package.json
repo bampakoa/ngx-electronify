@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronyzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "angular",
     "electron"
@@ -10,11 +10,12 @@
   },
   "homepage": "https://github.com/bampakoa/ngx-electronify/tree/master/packages/core/projects/electron#readme",
   "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0",
-    "electron": "^19.0.8"
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "electron": "^24.3.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "sideEffects": false
 }

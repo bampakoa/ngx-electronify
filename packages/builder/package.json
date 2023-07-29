@@ -16,7 +16,7 @@
     "save": "devDependencies"
   },
   "dependencies": {
-    "electron": "^24.3.1",
+    "electron": "^25.3.2",
     "electron-devtools-installer": "^3.2.0",
     "ngx-electronyzer": "1.0.1"
   },

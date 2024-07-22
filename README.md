@@ -42,7 +42,7 @@ You can run the official Angular DevTools extension to debug and profile your An
 👤 **Aristeidis Bampakos**
 
 * Website: http://www.medium.com/@abampakos
-* Twitter: [@abampakos](https://twitter.com/abampakos)
+* X: [@abampakos](https://x.com/abampakos)
 * Github: [@bampakoa](https://github.com/bampakoa)
 
 ## 🤝 Contributing

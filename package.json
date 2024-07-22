@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronify",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "scripts": {
     "serve": "tsc -w -p packages\\builder\\tsconfig.json",
     "build": "tsc -p packages\\builder\\tsconfig.json && npm run build:schematics",

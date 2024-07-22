@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.0.0](https://github.com/bampakoa/ngx-electronify/compare/2.0.1...18.0.0) (2024-07-22)
+
+
+### Features
+
+* update application logo ([0f00c77](https://github.com/bampakoa/ngx-electronify/commit/0f00c77bbbca41826da4ac205f587090754d43bd))
+* upgrade to Angular 18 and Electron 31 ([4059e50](https://github.com/bampakoa/ngx-electronify/commit/4059e5010b4d2bae9428da5ec34b49d80b73f9a6))
+
 ### [2.0.1](https://github.com/bampakoa/ngx-electronify/compare/2.0.0...2.0.1) (2022-09-02)
 
 

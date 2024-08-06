@@ -1,49 +1,22 @@
 <p align="center">
-  <img src="https://github.com/bampakoa/ngx-electronify/blob/master/logo.png?raw=true" alt="Ngx-electronify" />
+  <img src="logo.png" alt="Ngx-electronify" />
 </p>
 
 <h1 align="center">Welcome to ngx-electronify 👋</h1>
 
-> Angular CLI builder that runs your application in the desktop using Electron
+> A suite of Electron tools for the Angular framework
 
-The builder runs your Angular application in `serve` mode and loads it in an Electron window.
+**Ngx-electronify** is a collection of utilities that add desktop capabilities to Angular applications using Electron. It consists of the following:
 
-### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify)
-
-## Install
-
-```sh
-ng add ngx-electronify
-```
-You can pass the following options:
-* `--project`: the name of the project on which you want to install it. It is useful in multi-project workspaces such as Nx DevTools.
-
-## Usage
-
-```sh
-ng run [project-name]:desktop
-```
-You can pass the following options either in the `angular.json` file or when running the builder from the terminal:
-
-> Remember that options need to be typed in kebab-case format from the terminal!
-
-* `workspaceConfig`: the configuration of the workspace. By default it uses the workspace default configuration.
-* `devTools`: setting this to true will automatically open the Chrome developer tools. By default this is set to `false`.
-* `allowIntegration`: setting this to true will enable Electron integration through the [ngx-electronyzer](https://www.npmjs.com/package/ngx-electronyzer) library. By default this is set to `false`.
-
- <img src="https://github.com/bampakoa/ngx-electronify/blob/master/demo.gif?raw=true" alt="Demo" />
-
-## 🧩 Angular DevTools
-
-You can run the official Angular DevTools extension to debug and profile your Angular application directly from the Electron window. Select the `View | Toggle Developer Tools` item from the main menu of your application and click on the **Angular** tab to get started 🚀.
+- An [Angular CLI builder](packages/builder) that integrates into your development workflow and runs your application in the desktop.
+- [ngx-electronyzer](packages/core/projects/electron): An Angular library that exposes the Electron API to your application. 
 
 ## Author
 
 👤 **Aristeidis Bampakos**
 
-* Website: http://www.medium.com/@abampakos
+* LinkedIn: [Aristeidis Bampakos](https://www.linkedin.com/in/aristeidisbampakos)
 * X: [@abampakos](https://x.com/abampakos)
-* Github: [@bampakoa](https://github.com/bampakoa)
 
 ## 🤝 Contributing
 

@@ -1,10 +1,6 @@
-<h1 align="center">Welcome to ngx-electronyzer 👋</h1>
-
 > Angular library that provides integration of the Electron API into an Angular application
 
 The library was built as a replacement of [ngx-electron](https://github.com/ThorstenHans/ngx-electron), which is not currently under development. 
-
-### 🏠 [Homepage](https://github.com/bampakoa/ngx-electronify/packages/core/projects/electron)
 
 ## Install
 
@@ -25,7 +21,7 @@ import { ElectronService } from 'ngx-electronyzer';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-    constructor(private electronService: ElectronService) { }
+  constructor(private electronService: ElectronService) { }
 }
 ```
 The service is currently exposing the following capabilities:
@@ -49,19 +45,6 @@ The service is currently exposing the following capabilities:
 
 **The `remote` module is not supported in this library because it is no longer available in Electron, as it was the case in ngx-electron. You can read more about the removal [here](https://www.electronjs.org/docs/latest/breaking-changes#removed-remote-module).**
 
-## Author
-
-👤 **Aristeidis Bampakos**
-
-* Website: http://www.medium.com/@abampakos
-* X: [@abampakos](https://x.com/abampakos)
-* Github: [@bampakoa](https://github.com/bampakoa)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/bampakoa/ngx-electronify/issues). 
-
 ## 🙏 Acknowledgements
 
 Many thanks to [Thorsten Hans](https://github.com/ThorstenHans) for his great work and inspiration on the original integration with **ngx-electron**.
-

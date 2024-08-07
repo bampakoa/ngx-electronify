@@ -48,5 +48,7 @@ export default createBuilder((options: Options, context: BuilderContext) => {
         shell: true
       }
     );
+
+    context.logger.info('Launching Electron window...');
   });
 });

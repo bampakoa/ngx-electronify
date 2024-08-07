@@ -5,7 +5,7 @@
     "serve": "tsc -w -p packages\\builder\\tsconfig.json",
     "build": "tsc -p packages\\builder\\tsconfig.json && npm run build:schematics",
     "build:schematics": "tsc -p packages\\schematics\\tsconfig.schematics.json",
-    "copy": "copy packages\\builder\\*.json dist\\*.json && copy packages\\builder\\README.md dist\\README.md",
+    "copy": "copy packages\\builder\\*.json dist\\*.json && copy packages\\builder\\README.md dist\\README.md && copy packages\\builder\\logo.ico dist\\logo.ico",
     "copy:schematics": "copy packages\\schematics\\*.json dist\\schematics\\*.json",
     "postbuild": "npm run copy && npm run copy:schematics && npm run clean:dist",
     "clean:dist": "del dist\\tsconfig.json dist\\schematics\\tsconfig.schematics.json",

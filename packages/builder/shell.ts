@@ -1,7 +1,8 @@
 import { app, BrowserWindow, shell } from 'electron';
 import installExtension from 'electron-devtools-installer';
-const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
+import { join } from 'path';
 
+const ANGULAR_DEVTOOLS = 'ienfalfjdbdpebioblfackkekamfmbnh';
 const [port, devTools, allowIntegration] = process.argv.slice(2);
 const appUrl = `http://localhost:${port}/`;
 
@@ -9,7 +10,8 @@ function createWindow() {
   const options: Electron.BrowserWindowConstructorOptions = {
     width: 800,
     height: 600,
-    show: false
+    show: false,
+    icon: join(__dirname, 'logo.ico')
   };
 
   // expose the Electron API into the global window object

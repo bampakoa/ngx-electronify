@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.1.0](https://github.com/bampakoa/ngx-electronify/compare/18.0.0...18.1.0) (2024-09-02)
+
+
+### Features
+
+* show Electron launch message ([a04f9be](https://github.com/bampakoa/ngx-electronify/commit/a04f9bed4bfb131d9c0476400122a31fd40a8052))
+* show logo in desktop window ([25af18c](https://github.com/bampakoa/ngx-electronify/commit/25af18c59b68554d69152981e37ec8f1b6a9c9aa))
+* upgrade to Electron 32 ([473b51f](https://github.com/bampakoa/ngx-electronify/commit/473b51f8e38f351a7e3e8d1cb5d083cca777f91f)), closes [#20](https://github.com/bampakoa/ngx-electronify/issues/20)
+
 ## [18.0.0](https://github.com/bampakoa/ngx-electronify/compare/2.0.1...18.0.0) (2024-07-22)
 
 

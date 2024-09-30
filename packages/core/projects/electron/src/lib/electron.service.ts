@@ -7,6 +7,14 @@ import { ElectronAPI } from './renderer';
 export class ElectronService {
   private _electron: ElectronAPI = window.require?.('electron');
 
+  constructor() {
+    if (!this.isElectronApp) {
+      console.warn(
+        'Electron API is unavailable! Please check that your application is not running in the browser and node integration is enabled.'
+      );
+    }
+  }
+
   get isElectronApp(): boolean {
     return !!this._electron;
   }

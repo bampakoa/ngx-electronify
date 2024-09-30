@@ -41,8 +41,6 @@ The service is currently exposing the following capabilities:
   * `isX64` - Indicates if app is running on `x64` architecture
   * `isArm` - Indicates it app is running on `ARM` architecture
 
->Notice that all the above properties work normally, if you run the Angular application in the browser. However, their values will not be correct. So, make sure that you use the `isElectronApp` properly in your application.
-
 **The `remote` module is not supported in this library because it is no longer available in Electron, as it was the case in ngx-electron. You can read more about the removal [here](https://www.electronjs.org/docs/latest/breaking-changes#removed-remote-module).**
 
 ## 🙏 Acknowledgements

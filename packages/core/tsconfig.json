@@ -26,7 +26,8 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "types": ["electron"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

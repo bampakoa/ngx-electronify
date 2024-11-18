@@ -27,6 +27,7 @@
     "@angular/cli": "~18.1.1",
     "@angular/compiler-cli": "^18.1.1",
     "@types/jasmine": "~5.1.0",
+    "electron": "^33.0.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

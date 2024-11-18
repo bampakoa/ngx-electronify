@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.2.0](https://github.com/bampakoa/ngx-electronify/compare/18.1.0...18.2.0) (2024-11-18)
+
+
+### Features
+
+* show warning when cannot access Electron API ([442dd36](https://github.com/bampakoa/ngx-electronify/commit/442dd362fa4a931196dc7351372babfe30f2d749))
+* upgrade to Electron 33 ([4865c5d](https://github.com/bampakoa/ngx-electronify/commit/4865c5dda0258ca629877e0d803377ed0733b153))
+
+
+### Bug Fixes
+
+* add Electron types in the `core` package for development ([4f9d3b2](https://github.com/bampakoa/ngx-electronify/commit/4f9d3b263b51df86c599a02c32ba12ebe379561c))
+
 ## [18.1.0](https://github.com/bampakoa/ngx-electronify/compare/18.0.0...18.1.0) (2024-09-02)
 
 

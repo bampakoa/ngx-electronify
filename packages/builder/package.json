@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronify",
-  "version": "18.2.0",
+  "version": "19.0.0",
   "description": "Angular CLI builder that runs your application in the desktop using Electron",
   "keywords": [
     "angular",
@@ -18,7 +18,7 @@
   "dependencies": {
     "electron": "^33.0.0",
     "electron-devtools-installer": "^3.2.0",
-    "ngx-electronyzer": "^18.1.0"
+    "ngx-electronyzer": "^19.0.0"
   },
   "schematics": "./schematics/collection.json"
 }

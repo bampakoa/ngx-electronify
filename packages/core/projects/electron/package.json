@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronyzer",
-  "version": "18.2.0",
+  "version": "19.0.0",
   "description": "Angular library that provides integration of the Electron API into an Angular application",
   "keywords": [
     "angular",
@@ -11,8 +11,8 @@
   },
   "homepage": "https://github.com/bampakoa/ngx-electronify/tree/master/packages/core/projects/electron#readme",
   "peerDependencies": {
-    "@angular/common": "^18.0.0",
-    "@angular/core": "^18.0.0",
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0",
     "electron": "^33.0.0"
   },
   "dependencies": {

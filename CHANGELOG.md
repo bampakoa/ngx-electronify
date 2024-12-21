@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.0.0](https://github.com/bampakoa/ngx-electronify/compare/18.2.0...19.0.0) (2024-12-21)
+
+
+### Features
+
+* upgrade to Angular 19 ([a405407](https://github.com/bampakoa/ngx-electronify/commit/a405407fe57b26cfdf00f4c918623bc15fad1400)), closes [#22](https://github.com/bampakoa/ngx-electronify/issues/22)
+
 ## [18.2.0](https://github.com/bampakoa/ngx-electronify/compare/18.1.0...18.2.0) (2024-11-18)
 
 

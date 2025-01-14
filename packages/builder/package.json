@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "electron": "^33.0.0",
-    "electron-devtools-installer": "^3.2.0",
+    "electron-devtools-installer": "^4.0.0",
     "ngx-electronyzer": "^19.0.0"
   },
   "schematics": "./schematics/collection.json"

@@ -32,7 +32,7 @@
     "@angular-devkit/core": "^19.0.0",
     "@angular-devkit/schematics": "^19.0.0",
     "@schematics/angular": "^19.00",
-    "electron": "^33.2.0",
+    "electron": "^34.0.2",
     "electron-devtools-installer": "^4.0.0",
     "ngx-electronyzer": "^19.0.0"
   }

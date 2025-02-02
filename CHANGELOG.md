@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.1.0](https://github.com/bampakoa/ngx-electronify/compare/19.0.0...19.1.0) (2025-02-02)
+
+
+### Features
+
+* upgrade to Electron 34 ([98f9a58](https://github.com/bampakoa/ngx-electronify/commit/98f9a587e835003f07da91af300776072e99e84d))
+
 ## [19.0.0](https://github.com/bampakoa/ngx-electronify/compare/18.2.0...19.0.0) (2024-12-21)
 
 

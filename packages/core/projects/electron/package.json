@@ -1,6 +1,6 @@
 {
   "name": "ngx-electronyzer",
-  "version": "19.1.0",
+  "version": "19.1.1",
   "description": "Angular library that provides integration of the Electron API into an Angular application",
   "keywords": [
     "angular",
@@ -13,7 +13,7 @@
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0",
-    "electron": "^34.0.2"
+    "electron": "^35.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

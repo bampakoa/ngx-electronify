@@ -1,12 +1,13 @@
-import {inject, Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { ElectronAPI } from './renderer';
-import {DOCUMENT} from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ElectronService {
-  private _electron: ElectronAPI = inject(DOCUMENT).defaultView?.require?.('electron');
+  private _electron: ElectronAPI =
+    inject(DOCUMENT).defaultView?.require?.('electron');
 
   constructor() {
     if (!this.isElectronApp) {

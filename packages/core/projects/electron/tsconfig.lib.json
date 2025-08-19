@@ -9,6 +9,9 @@
     "inlineSources": true,
     "types": ["electron"]
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "**/*.spec.ts"
   ]

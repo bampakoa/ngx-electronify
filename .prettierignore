@@ -1,6 +1,0 @@
-tsconfig.json
-tsconfig.*.json
-*.yml
-*.md
-package-lock.json
-dist/*

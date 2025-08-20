@@ -8,22 +8,13 @@
     "copy": "copy packages\\builder\\*.json dist\\*.json && copy packages\\builder\\README.md dist\\README.md && copy packages\\builder\\logo.ico dist\\logo.ico",
     "copy:schematics": "copy packages\\schematics\\*.json dist\\schematics\\*.json",
     "postbuild": "npm run copy && npm run copy:schematics && npm run clean:dist",
-    "clean:dist": "del dist\\tsconfig.json dist\\schematics\\tsconfig.schematics.json",
-    "release:minor": "standard-version --tag-prefix= --release-as minor",
-    "release:major": "standard-version --tag-prefix= --release-as major",
-    "pretty": "prettier --write .",
-    "prepare": "husky"
+    "clean:dist": "del dist\\tsconfig.json dist\\schematics\\tsconfig.schematics.json"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^20.4.4",
-    "husky": "^9.1.2",
     "jasmine": "^3.6.3",
     "jasmine-node": "^3.0.0",
-    "prettier": "^3.3.3",
-    "standard-version": "^9.1.0",
     "ts-node": "~8.3.0",
     "typescript": "~4.5.2"
   },

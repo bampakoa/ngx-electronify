@@ -16,9 +16,27 @@
     "save": "devDependencies"
   },
   "dependencies": {
-    "electron": "^34.0.2",
-    "electron-devtools-installer": "^4.0.0",
-    "ngx-electronyzer": "^19.0.0"
+    "electron": "^37.3.1",
+    "electron-devtools-installer": "^4.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/architect": "^0.2001.6",
+    "@angular-devkit/core": "^20.1.6",
+    "@angular-devkit/schematics": "^20.1.6",
+    "@schematics/angular": "^20.1.6",
+    "@types/node": "^20.17.19",
+    "@types/jasmine": "~5.1.0",
+    "jasmine": "^5.0.0",
+    "typescript": "~5.8.2"
+  },
+  "scripts": {
+    "serve": "tsc -w -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && npm run build:schematics",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "copy": "copy *.json dist\\*.json && copy README.md dist\\README.md && copy logo.ico dist\\logo.ico",
+    "copy:schematics": "copy schematics\\*.json dist\\schematics\\*.json",
+    "postbuild": "npm run copy && npm run copy:schematics && npm run clean:dist",
+    "clean:dist": "del dist\\tsconfig*.json"
   },
   "schematics": "./schematics/collection.json"
 }

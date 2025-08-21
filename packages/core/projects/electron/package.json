@@ -11,9 +11,9 @@
   },
   "homepage": "https://github.com/bampakoa/ngx-electronify/tree/master/packages/core/projects/electron#readme",
   "peerDependencies": {
-    "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0",
-    "electron": "^34.0.2"
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "electron": "^37.3.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
